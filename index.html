@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-API Client</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="left-panel">
+        <div class="section">
+            <input type="text" id="idInstance" placeholder="idInstance">
+            <input type="text" id="apiTokenInstance" placeholder="ApiTokenInstance">
+        </div>
+
+        <div class="section">
+            <button class="api-btn" data-method="getSettings">getSettings</button>
+            <button class="api-btn" data-method="getStateInstance">getStateInstance</button>
+        </div>
+
+        <div class="section">
+            <h4>Отправить сообщение:</h4>
+            <input type="text" id="phone" placeholder="Номер WhatsApp (79123456789)">
+            <input type="text" id="message" placeholder="Текст сообщения">
+            <button class="action-btn" data-action="sendMessage">sendMessage</button>
+        </div>
+
+        <div class="section">
+            <h4>Отправить файл по URL:</h4>
+            <input type="text" id="phoneFile" placeholder="Номер WhatsApp">
+            <input type="text" id="fileUrl" placeholder="URL файла">
+            <button class="action-btn" data-action="sendFileByUrl">sendFileByUrl</button>
+        </div>
+    </div>
+
+    <div class="right-panel">
+        <textarea id="response" readonly></textarea>
+    </div>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

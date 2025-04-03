@@ -1,0 +1,57 @@
+body {
+    margin: 20px;
+    display: flex;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.left-panel {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.right-panel {
+    flex: 1;
+    height: 95vh;
+}
+
+input, button {
+    padding: 8px;
+    margin: 4px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.section {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+#response {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    overflow: auto;
+    white-space: pre-wrap;
+    background: #f8f8f8;
+    font-family: monospace;
+    resize: none;
+}
